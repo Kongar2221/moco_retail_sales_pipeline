@@ -3,18 +3,63 @@
   "tasks": [
     {
       "label": "ingest-run",
-      "type": "shell",
-      "command": "python etl/ingest_moco_retail.py"
+      "type": "process",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["etl/ingest_moco_retail.py"],
+      "options": {
+        "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" }
+      },
+      "problemMatcher": []
     },
     {
       "label": "dbt-build",
-      "type": "shell",
-      "command": "dbt build --project-dir dbt_project --profiles-dir ./.dbt"
+      "type": "process",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m", "dbt.cli.main",
+        "build",
+        "--project-dir", "dbt_project",
+        "--profiles-dir", "${workspaceFolder}\\.dbt"
+      ],
+      "options": {
+        "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "dbt-docs-generate",
+      "type": "process",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m", "dbt.cli.main",
+        "docs", "generate",
+        "--project-dir", "dbt_project",
+        "--profiles-dir", "${workspaceFolder}\\.dbt"
+      ],
+      "options": {
+        "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" }
+      },
+      "problemMatcher": []
     },
     {
       "label": "dbt-docs-serve",
-      "type": "shell",
-      "command": "dbt docs generate --project-dir dbt_project --profiles-dir ./.dbt && dbt docs serve --project-dir dbt_project --profiles-dir ./.dbt"
+      "type": "process",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m", "dbt.cli.main",
+        "docs", "serve",
+        "--project-dir", "dbt_project",
+        "--profiles-dir", "${workspaceFolder}\\.dbt"
+      ],
+      "options": {
+        "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "dbt-docs",
+      "dependsOrder": "sequence",
+      "dependsOn": ["dbt-docs-generate", "dbt-docs-serve"]
     }
   ]
 }

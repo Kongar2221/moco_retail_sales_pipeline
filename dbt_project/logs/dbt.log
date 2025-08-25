@@ -406,3 +406,296 @@ drop view if exists "moco_retail"."main"."stg_moco_retail__dbt_backup" cascade
 [0m21:24:45.677794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9EDFBD090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9EDF9C7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9EDED1A50>]}
 [0m21:24:45.678801 [debug] [MainThread]: Flushing usage events
 [0m21:24:46.463094 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:31:00.869133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B227E274D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B227E833D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B227E83850>]}
+
+
+============================== 21:31:00.871623 | 3434207e-8876-4208-95ec-33d80e1e6dae ==============================
+[0m21:31:00.871623 [info ] [MainThread]: Running with dbt=1.10.9
+[0m21:31:00.872615 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'empty': 'None', 'log_path': 'c:\\Project_CV\\Projects\\Full_ETL_To_BI\\moco-retail-sales-pipeline\\dbt_project\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\niv22\\.dbt', 'static_parser': 'True', 'write_json': 'True'}
+[0m21:31:00.947707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3434207e-8876-4208-95ec-33d80e1e6dae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B227E1B910>]}
+[0m21:31:00.961141 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:31:00.961141 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:31:00.961141 [debug] [MainThread]: Command `cli deps` succeeded at 21:31:00.961141 after 0.14 seconds
+[0m21:31:00.961141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B227E2C610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2210FFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2210FFDD0>]}
+[0m21:31:00.961141 [debug] [MainThread]: Flushing usage events
+[0m21:31:01.961862 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:35:25.482623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB78A360D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB78A369D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB78A37890>]}
+
+
+============================== 21:35:25.486683 | a8a7a8f2-38ac-41c6-92ea-bb9d0e608743 ==============================
+[0m21:35:25.486683 [info ] [MainThread]: Running with dbt=1.10.9
+[0m21:35:25.486683 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\niv22\\.dbt', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt ', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'c:\\Project_CV\\Projects\\Full_ETL_To_BI\\moco-retail-sales-pipeline\\dbt_project\\logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m21:35:25.561341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a8a7a8f2-38ac-41c6-92ea-bb9d0e608743', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB78A9CAD0>]}
+[0m21:35:25.575477 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:35:25.575477 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:35:25.577482 [debug] [MainThread]: Command `cli deps` succeeded at 21:35:25.577482 after 0.14 seconds
+[0m21:35:25.577482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB78A3C710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB78A9C7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB78A9FD10>]}
+[0m21:35:25.577482 [debug] [MainThread]: Flushing usage events
+[0m21:35:26.555776 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:36:17.756528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022045CE7250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022045CE4590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022045CE45D0>]}
+
+
+============================== 21:36:17.758528 | 36ee9a2b-45eb-461e-9078-2dfcbefa4cca ==============================
+[0m21:36:17.758528 [info ] [MainThread]: Running with dbt=1.10.9
+[0m21:36:17.758528 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'c:\\Project_CV\\Projects\\Full_ETL_To_BI\\moco-retail-sales-pipeline\\dbt_project\\logs', 'profiles_dir': 'C:\\Users\\niv22\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m21:36:17.834521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36ee9a2b-45eb-461e-9078-2dfcbefa4cca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022046E06190>]}
+[0m21:36:17.850404 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:36:17.851404 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:36:17.852405 [debug] [MainThread]: Command `cli deps` succeeded at 21:36:17.852405 after 0.14 seconds
+[0m21:36:17.853406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022045CECAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022046D1C290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022046D1FE10>]}
+[0m21:36:17.853406 [debug] [MainThread]: Flushing usage events
+[0m21:36:18.448686 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:39:40.345635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A00CEF7210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A00CEF6B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A00CEF6450>]}
+
+
+============================== 21:39:40.351590 | d53cedca-83f6-40cc-9fce-9ccb0b7b3c43 ==============================
+[0m21:39:40.351590 [info ] [MainThread]: Running with dbt=1.10.9
+[0m21:39:40.351590 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt ', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'printer_width': '80', 'log_path': 'c:\\Project_CV\\Projects\\Full_ETL_To_BI\\moco-retail-sales-pipeline\\dbt_project\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\niv22\\.dbt', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m21:39:40.429097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd53cedca-83f6-40cc-9fce-9ccb0b7b3c43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A00DFB4CD0>]}
+[0m21:39:40.444654 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:39:40.444654 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:39:40.446659 [debug] [MainThread]: Command `cli deps` succeeded at 21:39:40.446659 after 0.15 seconds
+[0m21:39:40.446659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A00DF2C7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A00DF2FB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A00DFB4C90>]}
+[0m21:39:40.446659 [debug] [MainThread]: Flushing usage events
+[0m21:39:41.219410 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:40:46.032542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287965FF250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287965FDAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287965FFA10>]}
+
+
+============================== 21:40:46.034622 | af815bb0-401c-42cd-9ab9-2b988232b0b8 ==============================
+[0m21:40:46.034622 [info ] [MainThread]: Running with dbt=1.10.9
+[0m21:40:46.036625 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt parse --project-dir dbt_project --profiles-dir ./.dbt', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'empty': 'None', 'log_path': 'dbt_project\\logs', 'indirect_selection': 'eager', 'profiles_dir': './.dbt', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m21:40:46.165168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'af815bb0-401c-42cd-9ab9-2b988232b0b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287977951D0>]}
+[0m21:40:46.202483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'af815bb0-401c-42cd-9ab9-2b988232b0b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028792FEAA50>]}
+[0m21:40:46.203486 [info ] [MainThread]: Registered adapter: duckdb=1.8.4
+[0m21:40:46.359929 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m21:40:46.445191 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:40:46.445191 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:40:46.449222 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.moco_retail.core
+[0m21:40:46.467418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'af815bb0-401c-42cd-9ab9-2b988232b0b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287963C5D50>]}
+[0m21:40:46.471396 [info ] [MainThread]: Performance info: dbt_project\target\perf_info.json
+[0m21:40:46.512432 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project\target\manifest.json
+[0m21:40:46.514522 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project\target\semantic_manifest.json
+[0m21:40:46.514522 [debug] [MainThread]: Command `dbt parse` succeeded at 21:40:46.514522 after 0.53 seconds
+[0m21:40:46.514522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002878F9FA450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002878F9FA690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002878F9FA850>]}
+[0m21:40:46.514522 [debug] [MainThread]: Flushing usage events
+[0m21:40:47.340270 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:41:22.932116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002478C07F890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002478BE27950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002478C07CE50>]}
+
+
+============================== 21:41:22.935307 | cbbcdba3-c679-42fd-b244-8acee513d740 ==============================
+[0m21:41:22.935307 [info ] [MainThread]: Running with dbt=1.10.4
+[0m21:41:22.935307 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'dbt_project\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt build --project-dir dbt_project --profiles-dir ./.dbt', 'send_anonymous_usage_stats': 'True'}
+[0m21:41:22.938306 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m21:41:22.939306 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "moco_retail_profile", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+[0m21:41:22.939306 [debug] [MainThread]: Command `dbt build` failed at 21:41:22.939306 after 0.05 seconds
+[0m21:41:22.940306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002478C085550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002478BD2A910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002478C0DBE50>]}
+[0m21:41:22.940306 [debug] [MainThread]: Flushing usage events
+[0m21:41:23.541657 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:42:29.546991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E98B31CE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E98B37A690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E98B37B750>]}
+
+
+============================== 21:42:29.550990 | bf4210dc-1693-40eb-a718-e8aa58a6ca23 ==============================
+[0m21:42:29.550990 [info ] [MainThread]: Running with dbt=1.10.4
+[0m21:42:29.550990 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'dbt_project\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt build --project-dir dbt_project --profiles-dir ./.dbt', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:42:29.552991 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m21:42:29.555004 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "moco_retail_profile", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+[0m21:42:29.555004 [debug] [MainThread]: Command `dbt build` failed at 21:42:29.555004 after 0.06 seconds
+[0m21:42:29.555004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E98B325490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E98C352410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E98C352B50>]}
+[0m21:42:29.555004 [debug] [MainThread]: Flushing usage events
+[0m21:42:30.225382 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:42:47.354791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F0C5BFB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F0B578CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F0C281150>]}
+
+
+============================== 21:42:47.358198 | 19db2d7b-303a-4e0d-9bed-ef36bad29003 ==============================
+[0m21:42:47.358198 [info ] [MainThread]: Running with dbt=1.10.4
+[0m21:42:47.358198 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'dbt_project\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt build --project-dir dbt_project --profiles-dir ./.dbt', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m21:42:47.361208 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m21:42:47.361208 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "moco_retail_profile", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+[0m21:42:47.362198 [debug] [MainThread]: Command `dbt build` failed at 21:42:47.362198 after 0.05 seconds
+[0m21:42:47.362198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F0C5C5650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F0D5F2AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F0D5F2B90>]}
+[0m21:42:47.363200 [debug] [MainThread]: Flushing usage events
+[0m21:42:48.117188 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:49:30.820694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273E1C59350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273E1CBF2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273DFC1CED0>]}
+
+
+============================== 21:49:30.824213 | 0947f317-b806-43c1-b693-5e7d174e8341 ==============================
+[0m21:49:30.824213 [info ] [MainThread]: Running with dbt=1.10.9
+[0m21:49:30.824213 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Project_CV\\Projects\\Full_ETL_To_BI\\moco-retail-sales-pipeline\\.dbt', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt build --project-dir dbt_project --profiles-dir C:\\Project_CV\\Projects\\Full_ETL_To_BI\\moco-retail-sales-pipeline\\.dbt', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'printer_width': '80', 'use_experimental_parser': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': 'dbt_project\\logs', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m21:49:30.948913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0947f317-b806-43c1-b693-5e7d174e8341', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273E1E1BE10>]}
+[0m21:49:30.986158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0947f317-b806-43c1-b693-5e7d174e8341', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273DD5CE7D0>]}
+[0m21:49:30.988161 [info ] [MainThread]: Registered adapter: duckdb=1.8.4
+[0m21:49:31.141302 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m21:49:31.211959 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:49:31.211959 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:49:31.217038 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.moco_retail.core
+[0m21:49:31.234044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0947f317-b806-43c1-b693-5e7d174e8341', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273E2113C90>]}
+[0m21:49:31.274163 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project\target\manifest.json
+[0m21:49:31.276168 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project\target\semantic_manifest.json
+[0m21:49:31.295191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0947f317-b806-43c1-b693-5e7d174e8341', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273E2424810>]}
+[0m21:49:31.295191 [info ] [MainThread]: Found 1 model, 1 source, 426 macros
+[0m21:49:31.296189 [info ] [MainThread]: 
+[0m21:49:31.297189 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:49:31.297189 [info ] [MainThread]: 
+[0m21:49:31.297189 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m21:49:31.298944 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_moco_retail'
+[0m21:49:31.373897 [debug] [ThreadPool]: Using duckdb connection "list_moco_retail"
+[0m21:49:31.373897 [debug] [ThreadPool]: On list_moco_retail: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "connection_name": "list_moco_retail"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"moco_retail"'
+    
+  
+  
+[0m21:49:31.374902 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:49:31.381879 [debug] [ThreadPool]: SQL status: OK in 0.008 seconds
+[0m21:49:31.382897 [debug] [ThreadPool]: On list_moco_retail: Close
+[0m21:49:31.385908 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_moco_retail, now create_moco_retail_main)
+[0m21:49:31.386897 [debug] [ThreadPool]: Creating schema "database: "moco_retail"
+schema: "main"
+"
+[0m21:49:31.390429 [debug] [ThreadPool]: Using duckdb connection "create_moco_retail_main"
+[0m21:49:31.390429 [debug] [ThreadPool]: On create_moco_retail_main: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "connection_name": "create_moco_retail_main"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='moco_retail'
+        and type='sqlite'
+    
+  
+[0m21:49:31.390429 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:49:31.395934 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m21:49:31.396928 [debug] [ThreadPool]: Using duckdb connection "create_moco_retail_main"
+[0m21:49:31.396928 [debug] [ThreadPool]: On create_moco_retail_main: BEGIN
+[0m21:49:31.396928 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:49:31.397928 [debug] [ThreadPool]: Using duckdb connection "create_moco_retail_main"
+[0m21:49:31.397928 [debug] [ThreadPool]: On create_moco_retail_main: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "connection_name": "create_moco_retail_main"} */
+
+    
+    
+        create schema if not exists "moco_retail"."main"
+    
+[0m21:49:31.398394 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:49:31.398896 [debug] [ThreadPool]: On create_moco_retail_main: COMMIT
+[0m21:49:31.398896 [debug] [ThreadPool]: Using duckdb connection "create_moco_retail_main"
+[0m21:49:31.398896 [debug] [ThreadPool]: On create_moco_retail_main: COMMIT
+[0m21:49:31.398896 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:49:31.398896 [debug] [ThreadPool]: On create_moco_retail_main: Close
+[0m21:49:31.400410 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_moco_retail_main'
+[0m21:49:31.403947 [debug] [ThreadPool]: Using duckdb connection "list_moco_retail_main"
+[0m21:49:31.403947 [debug] [ThreadPool]: On list_moco_retail_main: BEGIN
+[0m21:49:31.403947 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:49:31.410536 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m21:49:31.410536 [debug] [ThreadPool]: Using duckdb connection "list_moco_retail_main"
+[0m21:49:31.410536 [debug] [ThreadPool]: On list_moco_retail_main: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "connection_name": "list_moco_retail_main"} */
+select
+      'moco_retail' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'moco_retail'
+  
+[0m21:49:31.428792 [debug] [ThreadPool]: SQL status: OK in 0.017 seconds
+[0m21:49:31.429310 [debug] [ThreadPool]: On list_moco_retail_main: ROLLBACK
+[0m21:49:31.430316 [debug] [ThreadPool]: Failed to rollback 'list_moco_retail_main'
+[0m21:49:31.430316 [debug] [ThreadPool]: On list_moco_retail_main: Close
+[0m21:49:31.434068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0947f317-b806-43c1-b693-5e7d174e8341', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273E1F2A110>]}
+[0m21:49:31.434068 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:49:31.434068 [debug] [MainThread]: On master: BEGIN
+[0m21:49:31.434068 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:49:31.440095 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m21:49:31.440095 [debug] [MainThread]: On master: COMMIT
+[0m21:49:31.440095 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:49:31.440095 [debug] [MainThread]: On master: COMMIT
+[0m21:49:31.441086 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:49:31.441086 [debug] [MainThread]: On master: Close
+[0m21:49:31.445085 [debug] [Thread-1 (]: Began running node model.moco_retail.stg_moco_retail
+[0m21:49:31.445085 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stg_moco_retail ............................... [RUN]
+[0m21:49:31.446085 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.moco_retail.stg_moco_retail'
+[0m21:49:31.446085 [debug] [Thread-1 (]: Began compiling node model.moco_retail.stg_moco_retail
+[0m21:49:31.450299 [debug] [Thread-1 (]: Writing injected SQL for node "model.moco_retail.stg_moco_retail"
+[0m21:49:31.450299 [debug] [Thread-1 (]: Began executing node model.moco_retail.stg_moco_retail
+[0m21:49:31.473876 [debug] [Thread-1 (]: Writing runtime sql for node "model.moco_retail.stg_moco_retail"
+[0m21:49:31.473876 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.stg_moco_retail"
+[0m21:49:31.473876 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: BEGIN
+[0m21:49:31.473876 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:49:31.479903 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m21:49:31.479903 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.stg_moco_retail"
+[0m21:49:31.479903 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.stg_moco_retail"} */
+
+  
+  create view "moco_retail"."main"."stg_moco_retail__dbt_tmp" as (
+    
+select *
+from "moco_retail"."main"."raw_moco_retail"
+  );
+
+[0m21:49:31.479903 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:49:31.485249 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.stg_moco_retail"
+[0m21:49:31.485249 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.stg_moco_retail"} */
+alter view "moco_retail"."main"."stg_moco_retail" rename to "stg_moco_retail__dbt_backup"
+[0m21:49:31.485249 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:49:31.487167 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.stg_moco_retail"
+[0m21:49:31.487167 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.stg_moco_retail"} */
+alter view "moco_retail"."main"."stg_moco_retail__dbt_tmp" rename to "stg_moco_retail"
+[0m21:49:31.489164 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:49:31.495875 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: COMMIT
+[0m21:49:31.497877 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.stg_moco_retail"
+[0m21:49:31.497877 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: COMMIT
+[0m21:49:31.500818 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m21:49:31.504824 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.stg_moco_retail"
+[0m21:49:31.504824 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.stg_moco_retail"} */
+drop view if exists "moco_retail"."main"."stg_moco_retail__dbt_backup" cascade
+[0m21:49:31.506872 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m21:49:31.508864 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: Close
+[0m21:49:31.519878 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0947f317-b806-43c1-b693-5e7d174e8341', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273E1D77D90>]}
+[0m21:49:31.520871 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.stg_moco_retail .......................... [[32mOK[0m in 0.07s]
+[0m21:49:31.520871 [debug] [Thread-1 (]: Finished running node model.moco_retail.stg_moco_retail
+[0m21:49:31.521875 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:49:31.522889 [debug] [MainThread]: On master: BEGIN
+[0m21:49:31.522889 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:49:31.536522 [debug] [MainThread]: SQL status: OK in 0.013 seconds
+[0m21:49:31.536522 [debug] [MainThread]: On master: COMMIT
+[0m21:49:31.536522 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:49:31.536522 [debug] [MainThread]: On master: COMMIT
+[0m21:49:31.536522 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:49:31.536522 [debug] [MainThread]: On master: Close
+[0m21:49:31.539027 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:49:31.539027 [debug] [MainThread]: Connection 'create_moco_retail_main' was properly closed.
+[0m21:49:31.539027 [debug] [MainThread]: Connection 'list_moco_retail_main' was properly closed.
+[0m21:49:31.539027 [debug] [MainThread]: Connection 'model.moco_retail.stg_moco_retail' was properly closed.
+[0m21:49:31.539027 [info ] [MainThread]: 
+[0m21:49:31.539027 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.24 seconds (0.24s).
+[0m21:49:31.541032 [debug] [MainThread]: Command end result
+[0m21:49:31.551361 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project\target\manifest.json
+[0m21:49:31.553886 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project\target\semantic_manifest.json
+[0m21:49:31.557892 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt_project\target\run_results.json
+[0m21:49:31.557892 [info ] [MainThread]: 
+[0m21:49:31.558897 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:49:31.558897 [info ] [MainThread]: 
+[0m21:49:31.559775 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m21:49:31.559775 [debug] [MainThread]: Command `python -m dbt.cli.main build` succeeded at 21:49:31.559775 after 0.79 seconds
+[0m21:49:31.559775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273DFD4DCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273DFD4DA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273E27355D0>]}
+[0m21:49:31.560779 [debug] [MainThread]: Flushing usage events
+[0m21:49:33.139187 [debug] [MainThread]: An error was encountered while trying to flush usage events
