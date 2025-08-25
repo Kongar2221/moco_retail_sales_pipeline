@@ -1,0 +1,10 @@
+ cid             name    type  notnull dflt_value    pk
+   0             YEAR  BIGINT    False       None False
+   1            MONTH  BIGINT    False       None False
+   2         SUPPLIER VARCHAR    False       None False
+   3        ITEM CODE VARCHAR    False       None False
+   4 ITEM DESCRIPTION VARCHAR    False       None False
+   5        ITEM TYPE VARCHAR    False       None False
+   6     RETAIL SALES  DOUBLE    False       None False
+   7 RETAIL TRANSFERS  DOUBLE    False       None False
+   8  WAREHOUSE SALES  DOUBLE    False       None False
