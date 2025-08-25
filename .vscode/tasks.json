@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ingest-run",
+      "type": "shell",
+      "command": "python etl/ingest_moco_retail.py"
+    },
+    {
+      "label": "dbt-build",
+      "type": "shell",
+      "command": "dbt build --project-dir dbt_project --profiles-dir ./.dbt"
+    },
+    {
+      "label": "dbt-docs-serve",
+      "type": "shell",
+      "command": "dbt docs generate --project-dir dbt_project --profiles-dir ./.dbt && dbt docs serve --project-dir dbt_project --profiles-dir ./.dbt"
+    }
+  ]
+}
