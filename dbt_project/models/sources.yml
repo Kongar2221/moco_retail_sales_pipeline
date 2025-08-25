@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: raw
+    schema: main
+    description: "Landing schema inside the local DuckDB file."
+    tables:
+      - name: raw_moco_retail
+        description: "Loaded from Montgomery County CSV via etl/ingest_moco_retail.py"
