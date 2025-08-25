@@ -1,0 +1,56 @@
+[0m20:04:50.946224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277F6AAAC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277F6A4F810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277F6815290>]}
+
+
+============================== 20:04:50.966503 | 43990f67-83a4-4dc6-9dc5-ce62125aff95 ==============================
+[0m20:04:50.966503 [info ] [MainThread]: Running with dbt=1.10.9
+[0m20:04:50.967503 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt debug --profiles-dir ./.dbt', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': './.dbt'}
+[0m20:04:51.155796 [info ] [MainThread]: dbt version: 1.10.9
+[0m20:04:51.155796 [info ] [MainThread]: python version: 3.11.5
+[0m20:04:51.155796 [info ] [MainThread]: python path: C:\Project_CV\Projects\Full_ETL_To_BI\moco-retail-sales-pipeline\.venv\Scripts\python.exe
+[0m20:04:51.156800 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m20:04:51.212366 [info ] [MainThread]: Using profiles dir at ./.dbt
+[0m20:04:51.213360 [info ] [MainThread]: Using profiles.yml file at ./.dbt\profiles.yml
+[0m20:04:51.213360 [info ] [MainThread]: Using dbt_project.yml file at C:\Project_CV\Projects\Full_ETL_To_BI\moco-retail-sales-pipeline\dbt_project.yml
+[0m20:04:51.215567 [info ] [MainThread]: adapter type: duckdb
+[0m20:04:51.216579 [info ] [MainThread]: adapter version: 1.8.4
+[0m20:04:51.216579 [info ] [MainThread]: Configuration:
+[0m20:04:51.217570 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:04:51.217570 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m20:04:51.217570 [info ] [MainThread]: Required dependencies:
+[0m20:04:51.218570 [debug] [MainThread]: Executing "git --help"
+[0m20:04:51.229669 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:04:51.230682 [debug] [MainThread]: STDERR: "b''"
+[0m20:04:51.230682 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:04:51.230682 [info ] [MainThread]: Connection:
+[0m20:04:51.230682 [info ] [MainThread]:   database: moco_retail
+[0m20:04:51.232187 [info ] [MainThread]:   schema: main
+[0m20:04:51.232187 [info ] [MainThread]:   path: .duckdb/moco_retail.duckdb
+[0m20:04:51.232187 [info ] [MainThread]:   config_options: None
+[0m20:04:51.233191 [info ] [MainThread]:   extensions: None
+[0m20:04:51.233191 [info ] [MainThread]:   settings: {}
+[0m20:04:51.233191 [info ] [MainThread]:   external_root: .
+[0m20:04:51.234192 [info ] [MainThread]:   use_credential_provider: None
+[0m20:04:51.234192 [info ] [MainThread]:   attach: None
+[0m20:04:51.234192 [info ] [MainThread]:   filesystems: None
+[0m20:04:51.234192 [info ] [MainThread]:   remote: None
+[0m20:04:51.235335 [info ] [MainThread]:   plugins: None
+[0m20:04:51.235335 [info ] [MainThread]:   disable_transactions: False
+[0m20:04:51.236339 [info ] [MainThread]: Registered adapter: duckdb=1.8.4
+[0m20:04:51.403899 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m20:04:53.073143 [debug] [MainThread]: Using duckdb connection "debug"
+[0m20:04:53.074151 [debug] [MainThread]: On debug: select 1 as id
+[0m20:04:53.074151 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:04:53.088727 [debug] [MainThread]: SQL status: OK in 0.014 seconds
+[0m20:04:53.088727 [debug] [MainThread]: On debug: Close
+[0m20:04:53.090730 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:04:53.090730 [info ] [MainThread]: [31m1 check failed:[0m
+[0m20:04:53.092234 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Project_CV\Projects\Full_ETL_To_BI\moco-retail-sales-pipeline\dbt_project.yml> not found
+
+[0m20:04:53.092234 [debug] [MainThread]: Command `dbt debug` failed at 20:04:53.092234 after 2.20 seconds
+[0m20:04:53.093237 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:04:53.093237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277F00813D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277F6AAA690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277F7B0A150>]}
+[0m20:04:53.093237 [debug] [MainThread]: Flushing usage events
+[0m20:04:53.885613 [debug] [MainThread]: An error was encountered while trying to flush usage events
