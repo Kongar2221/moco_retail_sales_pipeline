@@ -1,0 +1,7 @@
+moco_retail_profile:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ".duckdb/moco_retail.duckdb"
+      threads: 4

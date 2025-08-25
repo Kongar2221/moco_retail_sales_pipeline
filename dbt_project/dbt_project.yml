@@ -1,0 +1,20 @@
+name: "moco_retail"
+version: "1.0.0"
+config-version: 2
+
+profile: "moco_retail_profile"
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analysis"]
+macro-paths: ["macros"]
+docs-paths: ["models"]
+
+models:
+  moco_retail:
+    +materialized: table
+    stg:
+      +materialized: view
+    core:
+      +materialized: table
