@@ -18,7 +18,7 @@
       "args": [
         "-m", "dbt.cli.main",
         "build",
-        "--project-dir", "dbt_project",
+        "--project-dir", "dbt_moco_retail",
         "--profiles-dir", "${workspaceFolder}\\.dbt"
       ],
       "options": {
@@ -33,7 +33,7 @@
       "args": [
         "-m", "dbt.cli.main",
         "docs", "generate",
-        "--project-dir", "dbt_project",
+        "--project-dir", "dbt_moco_retail",
         "--profiles-dir", "${workspaceFolder}\\.dbt"
       ],
       "options": {
@@ -48,7 +48,7 @@
       "args": [
         "-m", "dbt.cli.main",
         "docs", "serve",
-        "--project-dir", "dbt_project",
+        "--project-dir", "dbt_moco_retail",
         "--profiles-dir", "${workspaceFolder}\\.dbt"
       ],
       "options": {

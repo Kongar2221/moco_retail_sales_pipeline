@@ -1,6 +1,6 @@
 {
   "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
-  "dbtPowerUser.projectDir": "${workspaceFolder}/dbt_project",
+  "dbtPowerUser.projectDir": "${workspaceFolder}/dbt_moco_retail",
   "dbtPowerUser.profilesDir": "${workspaceFolder}/.dbt",
   "terminal.integrated.env.windows": {
     "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt",
