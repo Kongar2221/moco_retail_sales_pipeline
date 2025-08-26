@@ -711,3 +711,4 @@ drop view if exists "moco_retail"."main"."stg_moco_retail__dbt_backup" cascade
 [0m20:14:49.619198 [debug] [MainThread]: Command `cli deps` succeeded at 20:14:49.619198 after 0.15 seconds
 [0m20:14:49.619198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD0745C250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD072146D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD0076FDD0>]}
 [0m20:14:49.619198 [debug] [MainThread]: Flushing usage events
+[0m20:14:51.419208 [debug] [MainThread]: An error was encountered while trying to flush usage events
