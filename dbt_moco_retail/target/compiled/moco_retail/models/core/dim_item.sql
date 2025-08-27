@@ -5,11 +5,10 @@ with base as (
     item_code,
     item_description,
     item_type,
-    supplier
+    coalesce(nullif(trim(supplier), ''), 'unknown') as supplier
   from "moco_retail"."main"."stg_moco_retail_typed"
 ),
 dim as (
-  -- Use MAX on text (stable + DuckDB-friendly) to get a representative value
   select
     item_code,
     max(item_description) as item_description,

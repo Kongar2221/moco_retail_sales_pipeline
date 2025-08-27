@@ -60,6 +60,20 @@
       "label": "dbt-docs",
       "dependsOrder": "sequence",
       "dependsOn": ["dbt-docs-generate", "dbt-docs-serve"]
+    },
+    {
+      "label": "dbt-full-refresh-fact",
+      "type": "process",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m","dbt.cli.main","build",
+        "--project-dir","dbt_moco_retail",
+        "--profiles-dir","${workspaceFolder}\\.dbt",
+        "-s","fct_monthly_sales",
+        "--full-refresh"
+      ],
+      "options": { "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" } },
+      "problemMatcher": []
     }
   ]
 }

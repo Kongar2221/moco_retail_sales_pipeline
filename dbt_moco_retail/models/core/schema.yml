@@ -1,0 +1,18 @@
+version: 2
+models:
+  - name: fct_monthly_sales
+    description: "monthly item sales by supplier; sums retail, transfers, warehouse."
+    tests:
+      - unique_combo:
+          arguments:
+            combo_cols: ['sale_date','item_code','supplier']
+    columns:
+      - name: sale_date
+        tests: 
+          - not_null
+      - name: item_code
+        tests:
+          - not_null
+      - name: supplier
+        tests: 
+          - not_null
