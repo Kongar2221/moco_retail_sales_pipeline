@@ -1,3 +1,3 @@
 {{ config(materialized='view') }}
-select *
-from {{ source('raw','raw_moco_retail') }}
+select * from {{ source('raw','raw_moco_retail') }}
+ 

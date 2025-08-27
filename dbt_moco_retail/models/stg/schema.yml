@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: stg_moco_retail
+    description: "Raw MoCo retail sales exposed as a view via source()."
+
+  - name: stg_moco_retail_typed
+    description: "Typed/renamed staging + derived sale_date."
+    columns:
+      - name: item_code
+        tests: [not_null]
+      - name: sale_date
+        tests: [not_null]

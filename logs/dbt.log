@@ -54,3 +54,33 @@
 [0m20:04:53.093237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277F00813D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277F6AAA690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277F7B0A150>]}
 [0m20:04:53.093237 [debug] [MainThread]: Flushing usage events
 [0m20:04:53.885613 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:07:29.606595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021BEF6C4710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021BF3DCEF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021BF3DD1990>]}
+
+
+============================== 21:07:29.609722 | 3b079d2d-4805-4018-a8e4-ff0e3fc246d2 ==============================
+[0m21:07:29.609722 [info ] [MainThread]: Running with dbt=1.10.9
+[0m21:07:29.610721 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt build --project-dir dbt_moco_retail --profiles-dir C:\\Project_CV\\Projects\\Full_ETL_To_BI\\moco-retail-sales-pipeline\\.dbt', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Project_CV\\Projects\\Full_ETL_To_BI\\moco-retail-sales-pipeline\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m21:07:29.610721 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path dbt_moco_retail\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:07:29.611722 [debug] [MainThread]: Command `python -m dbt.cli.main build` failed at 21:07:29.611722 after 0.05 seconds
+[0m21:07:29.611722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021BF3D69810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021BF3D5F2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021BF3D5B6D0>]}
+[0m21:07:29.611722 [debug] [MainThread]: Flushing usage events
+[0m21:07:31.381995 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:46:33.943012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001540E6C3410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015412D5ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001540E6C4710>]}
+
+
+============================== 15:46:33.945011 | f0c71c7f-042a-46a5-b8a9-9bfcba395ac0 ==============================
+[0m15:46:33.945011 [info ] [MainThread]: Running with dbt=1.10.9
+[0m15:46:33.946022 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt build --project-dir dbt_moco_retail --profiles-dir C:\\Project_CV\\Projects\\Full_ETL_To_BI\\moco-retail-sales-pipeline\\.dbt', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'empty': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Project_CV\\Projects\\Full_ETL_To_BI\\moco-retail-sales-pipeline\\.dbt'}
+[0m15:46:33.946022 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path dbt_moco_retail\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:46:33.947011 [debug] [MainThread]: Command `python -m dbt.cli.main build` failed at 15:46:33.947011 after 0.06 seconds
+[0m15:46:33.947011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015412DCF150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015412D65850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015412D5CC10>]}
+[0m15:46:33.948021 [debug] [MainThread]: Flushing usage events
+[0m15:46:34.761213 [debug] [MainThread]: An error was encountered while trying to flush usage events
