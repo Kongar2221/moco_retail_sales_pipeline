@@ -4,6 +4,7 @@
   "dbtPowerUser.profilesDir": "${workspaceFolder}/.dbt",
   "terminal.integrated.env.windows": {
     "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt",
+    "DUCKDB_PATH": "${workspaceFolder}\\.duckdb\\moco_retail.duckdb",
     "PATH": "${workspaceFolder}\\.venv\\Scripts;${env:PATH}"
   }
 }
