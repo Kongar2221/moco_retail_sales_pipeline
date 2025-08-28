@@ -6,9 +6,7 @@
       "type": "process",
       "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
       "args": ["etl/ingest_moco_retail.py"],
-      "options": {
-        "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" }
-      },
+      "options": { "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" } },
       "problemMatcher": []
     },
     {
@@ -21,9 +19,7 @@
         "--project-dir", "dbt_moco_retail",
         "--profiles-dir", "${workspaceFolder}\\.dbt"
       ],
-      "options": {
-        "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" }
-      },
+      "options": { "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" } },
       "problemMatcher": []
     },
     {
@@ -36,9 +32,7 @@
         "--project-dir", "dbt_moco_retail",
         "--profiles-dir", "${workspaceFolder}\\.dbt"
       ],
-      "options": {
-        "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" }
-      },
+      "options": { "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" } },
       "problemMatcher": []
     },
     {
@@ -51,9 +45,7 @@
         "--project-dir", "dbt_moco_retail",
         "--profiles-dir", "${workspaceFolder}\\.dbt"
       ],
-      "options": {
-        "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" }
-      },
+      "options": { "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" } },
       "problemMatcher": []
     },
     {
@@ -66,10 +58,10 @@
       "type": "process",
       "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
       "args": [
-        "-m","dbt.cli.main","build",
-        "--project-dir","dbt_moco_retail",
-        "--profiles-dir","${workspaceFolder}\\.dbt",
-        "-s","fct_monthly_sales",
+        "-m", "dbt.cli.main", "build",
+        "--project-dir", "dbt_moco_retail",
+        "--profiles-dir", "${workspaceFolder}\\.dbt",
+        "-s", "fct_monthly_sales",
         "--full-refresh"
       ],
       "options": { "env": { "DBT_PROFILES_DIR": "${workspaceFolder}\\.dbt" } },
