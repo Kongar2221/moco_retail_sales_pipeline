@@ -2,11 +2,7 @@ name: dbt ci
 
 on:
   pull_request:
-    branches:
-      - main
-  push:
-    branches:
-      - main
+    branches: [ main ]
   push:
     branches:
       - main
@@ -14,6 +10,12 @@ on:
   schedule:
     - cron: '0 6 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,11 +27,9 @@ jobs:
       DBT_PROFILES_DIR: ${{ github.workspace }}/.dbt
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: setup python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -45,7 +45,7 @@ jobs:
       - name: dbt build (models + tests)
         run: python -m dbt.cli.main build --project-dir dbt_moco_retail --profiles-dir ./.dbt
 
-      - name: generate docs
+      - name: generate docs (html)
         run: python -m dbt.cli.main docs generate --project-dir dbt_moco_retail --profiles-dir ./.dbt
 
       - name: upload artifacts (dbt target/)
@@ -55,3 +55,16 @@ jobs:
           path: dbt_moco_retail/target/**
           if-no-files-found: warn
           retention-days: 7
+
+      - name: upload pages artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dbt_moco_retail/target
+
+  deploy-pages:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/deploy-pages@v4
