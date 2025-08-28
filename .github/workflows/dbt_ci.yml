@@ -25,6 +25,8 @@ jobs:
       cancel-in-progress: true
     env:
       DBT_PROFILES_DIR: ${{ github.workspace }}/.dbt
+      DUCKDB_PATH: ${{ github.workspace }}/.duckdb/moco_retail.duckdb
+      MOCO_RETAIL_CSV_URL: ${{ vars.MOCO_RETAIL_CSV_URL }}
 
     steps:
       - uses: actions/checkout@v4
