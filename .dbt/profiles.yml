@@ -3,5 +3,6 @@ moco_retail_profile:
   outputs:
     dev:
       type: duckdb
-      path: ".duckdb/moco_retail.duckdb"
+      path: "{{ env_var('DUCKDB_PATH', '../.duckdb/moco_retail.duckdb') }}"
+      schema: main
       threads: 4
