@@ -6466,3 +6466,738 @@ having count(*) > 1
 [0m13:00:15.684203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA7B994C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA74FC6410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA74D84150>]}
 [0m13:00:15.685216 [debug] [MainThread]: Flushing usage events
 [0m13:00:16.300314 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:34:19.304791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B84BD2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B8500350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B7382D10>]}
+
+
+============================== 13:34:19.307810 | 3b122e08-61ce-48f7-9507-c2aa36e31a6e ==============================
+[0m13:34:19.307810 [info ] [MainThread]: Running with dbt=1.10.9
+[0m13:34:19.307810 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt build --project-dir dbt_moco_retail --profiles-dir C:\\Project_CV\\Projects\\Full_ETL_To_BI\\moco-retail-sales-pipeline\\.dbt', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'printer_width': '80', 'empty': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'dbt_moco_retail\\logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': 'C:\\Project_CV\\Projects\\Full_ETL_To_BI\\moco-retail-sales-pipeline\\.dbt'}
+[0m13:34:19.427826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3b122e08-61ce-48f7-9507-c2aa36e31a6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B8594D10>]}
+[0m13:34:19.463205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3b122e08-61ce-48f7-9507-c2aa36e31a6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B3E36C90>]}
+[0m13:34:19.465725 [info ] [MainThread]: Registered adapter: duckdb=1.8.4
+[0m13:34:19.621007 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m13:34:19.713196 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:34:19.714196 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:34:19.739758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3b122e08-61ce-48f7-9507-c2aa36e31a6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B879DD90>]}
+[0m13:34:19.785744 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_moco_retail\target\manifest.json
+[0m13:34:19.787747 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_moco_retail\target\semantic_manifest.json
+[0m13:34:19.808869 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3b122e08-61ce-48f7-9507-c2aa36e31a6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B8D6F7D0>]}
+[0m13:34:19.808869 [info ] [MainThread]: Found 4 models, 6 data tests, 1 source, 428 macros
+[0m13:34:19.810884 [info ] [MainThread]: 
+[0m13:34:19.810884 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:34:19.811869 [info ] [MainThread]: 
+[0m13:34:19.811869 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:34:19.814876 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_moco_retail'
+[0m13:34:19.887432 [debug] [ThreadPool]: Using duckdb connection "list_moco_retail"
+[0m13:34:19.887432 [debug] [ThreadPool]: On list_moco_retail: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "connection_name": "list_moco_retail"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"moco_retail"'
+    
+  
+  
+[0m13:34:19.887432 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:34:19.902942 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m13:34:19.903956 [debug] [ThreadPool]: On list_moco_retail: Close
+[0m13:34:19.905790 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_moco_retail, now create_moco_retail_main)
+[0m13:34:19.905790 [debug] [ThreadPool]: Creating schema "database: "moco_retail"
+schema: "main"
+"
+[0m13:34:19.909785 [debug] [ThreadPool]: Using duckdb connection "create_moco_retail_main"
+[0m13:34:19.909785 [debug] [ThreadPool]: On create_moco_retail_main: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "connection_name": "create_moco_retail_main"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='moco_retail'
+        and type='sqlite'
+    
+  
+[0m13:34:19.909785 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:34:19.914789 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m13:34:19.915959 [debug] [ThreadPool]: Using duckdb connection "create_moco_retail_main"
+[0m13:34:19.915959 [debug] [ThreadPool]: On create_moco_retail_main: BEGIN
+[0m13:34:19.916961 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:34:19.916961 [debug] [ThreadPool]: Using duckdb connection "create_moco_retail_main"
+[0m13:34:19.916961 [debug] [ThreadPool]: On create_moco_retail_main: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "connection_name": "create_moco_retail_main"} */
+
+    
+    
+        create schema if not exists "moco_retail"."main"
+    
+[0m13:34:19.917961 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:34:19.917961 [debug] [ThreadPool]: On create_moco_retail_main: COMMIT
+[0m13:34:19.918960 [debug] [ThreadPool]: Using duckdb connection "create_moco_retail_main"
+[0m13:34:19.918960 [debug] [ThreadPool]: On create_moco_retail_main: COMMIT
+[0m13:34:19.918960 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:34:19.918960 [debug] [ThreadPool]: On create_moco_retail_main: Close
+[0m13:34:19.921959 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_moco_retail_main'
+[0m13:34:19.924968 [debug] [ThreadPool]: Using duckdb connection "list_moco_retail_main"
+[0m13:34:19.925487 [debug] [ThreadPool]: On list_moco_retail_main: BEGIN
+[0m13:34:19.925487 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:34:19.930483 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m13:34:19.930483 [debug] [ThreadPool]: Using duckdb connection "list_moco_retail_main"
+[0m13:34:19.930483 [debug] [ThreadPool]: On list_moco_retail_main: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "connection_name": "list_moco_retail_main"} */
+select
+      'moco_retail' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'moco_retail'
+  
+[0m13:34:19.947535 [debug] [ThreadPool]: SQL status: OK in 0.016 seconds
+[0m13:34:19.948527 [debug] [ThreadPool]: On list_moco_retail_main: ROLLBACK
+[0m13:34:19.949524 [debug] [ThreadPool]: Failed to rollback 'list_moco_retail_main'
+[0m13:34:19.949524 [debug] [ThreadPool]: On list_moco_retail_main: Close
+[0m13:34:19.953524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3b122e08-61ce-48f7-9507-c2aa36e31a6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B8514D50>]}
+[0m13:34:19.953524 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:34:19.953524 [debug] [MainThread]: On master: BEGIN
+[0m13:34:19.953524 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:34:19.958040 [debug] [MainThread]: SQL status: OK in 0.004 seconds
+[0m13:34:19.959040 [debug] [MainThread]: On master: COMMIT
+[0m13:34:19.959040 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:34:19.959040 [debug] [MainThread]: On master: COMMIT
+[0m13:34:19.959040 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:34:19.960052 [debug] [MainThread]: On master: Close
+[0m13:34:19.963049 [debug] [Thread-1 (]: Began running node model.moco_retail.stg_moco_retail
+[0m13:34:19.963049 [debug] [Thread-2 (]: Began running node model.moco_retail.stg_moco_retail_typed
+[0m13:34:19.964041 [info ] [Thread-1 (]: 1 of 10 START sql view model main.stg_moco_retail .............................. [RUN]
+[0m13:34:19.964041 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.moco_retail.stg_moco_retail'
+[0m13:34:19.964041 [info ] [Thread-2 (]: 2 of 10 START sql view model main.stg_moco_retail_typed ........................ [RUN]
+[0m13:34:19.965040 [debug] [Thread-1 (]: Began compiling node model.moco_retail.stg_moco_retail
+[0m13:34:19.965040 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.moco_retail.stg_moco_retail_typed'
+[0m13:34:19.970188 [debug] [Thread-1 (]: Writing injected SQL for node "model.moco_retail.stg_moco_retail"
+[0m13:34:19.970188 [debug] [Thread-2 (]: Began compiling node model.moco_retail.stg_moco_retail_typed
+[0m13:34:19.972275 [debug] [Thread-2 (]: Writing injected SQL for node "model.moco_retail.stg_moco_retail_typed"
+[0m13:34:19.972275 [debug] [Thread-1 (]: Began executing node model.moco_retail.stg_moco_retail
+[0m13:34:19.989862 [debug] [Thread-1 (]: Writing runtime sql for node "model.moco_retail.stg_moco_retail"
+[0m13:34:19.990862 [debug] [Thread-2 (]: Began executing node model.moco_retail.stg_moco_retail_typed
+[0m13:34:19.993214 [debug] [Thread-2 (]: Writing runtime sql for node "model.moco_retail.stg_moco_retail_typed"
+[0m13:34:19.993214 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.stg_moco_retail"
+[0m13:34:19.993214 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: BEGIN
+[0m13:34:19.993214 [debug] [Thread-2 (]: Using duckdb connection "model.moco_retail.stg_moco_retail_typed"
+[0m13:34:19.993214 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:34:19.994719 [debug] [Thread-2 (]: On model.moco_retail.stg_moco_retail_typed: BEGIN
+[0m13:34:19.994719 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:34:19.999805 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m13:34:19.999805 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m13:34:20.000805 [debug] [Thread-2 (]: Using duckdb connection "model.moco_retail.stg_moco_retail_typed"
+[0m13:34:20.000805 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.stg_moco_retail"
+[0m13:34:20.000805 [debug] [Thread-2 (]: On model.moco_retail.stg_moco_retail_typed: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.stg_moco_retail_typed"} */
+
+  
+  create view "moco_retail"."main"."stg_moco_retail_typed__dbt_tmp" as (
+    
+
+with src as (
+  select * from "moco_retail"."main"."raw_moco_retail"
+),
+renamed as (
+  select try_cast("YEAR" as integer) as year_num,
+         try_cast("MONTH" as integer) as month_num,
+         cast("SUPPLIER" as varchar) as supplier,
+         cast("ITEM CODE" as varchar) as item_code,
+         cast("ITEM DESCRIPTION" as varchar) as item_description,
+         cast("ITEM TYPE" as varchar) as item_type,
+         try_cast("RETAIL SALES" as double)  as retail_sales,
+         try_cast("RETAIL TRANSFERS" as double)  as retail_transfers,
+         try_cast("WAREHOUSE SALES" as double)  as warehouse_sales
+    from src
+),
+final as (
+  select year_num, month_num, supplier,
+         item_code, item_description, item_type,
+         retail_sales, retail_transfers, warehouse_sales,
+         case
+           when year_num between 1900 and 2100 and month_num between 1 and 12
+           then make_date(year_num, month_num, 1)
+           else null
+         end as sale_date
+    from renamed
+)
+select * from final
+  );
+
+[0m13:34:20.001807 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.stg_moco_retail"} */
+
+  
+  create view "moco_retail"."main"."stg_moco_retail__dbt_tmp" as (
+    
+select * from "moco_retail"."main"."raw_moco_retail"
+  );
+
+[0m13:34:20.002806 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:34:20.002806 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m13:34:20.006326 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.stg_moco_retail"
+[0m13:34:20.008324 [debug] [Thread-2 (]: Using duckdb connection "model.moco_retail.stg_moco_retail_typed"
+[0m13:34:20.008324 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.stg_moco_retail"} */
+alter view "moco_retail"."main"."stg_moco_retail" rename to "stg_moco_retail__dbt_backup"
+[0m13:34:20.008324 [debug] [Thread-2 (]: On model.moco_retail.stg_moco_retail_typed: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.stg_moco_retail_typed"} */
+alter view "moco_retail"."main"."stg_moco_retail_typed" rename to "stg_moco_retail_typed__dbt_backup"
+[0m13:34:20.009317 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:34:20.010317 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.stg_moco_retail"
+[0m13:34:20.011317 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m13:34:20.011317 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.stg_moco_retail"} */
+alter view "moco_retail"."main"."stg_moco_retail__dbt_tmp" rename to "stg_moco_retail"
+[0m13:34:20.013319 [debug] [Thread-2 (]: Using duckdb connection "model.moco_retail.stg_moco_retail_typed"
+[0m13:34:20.013319 [debug] [Thread-2 (]: On model.moco_retail.stg_moco_retail_typed: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.stg_moco_retail_typed"} */
+alter view "moco_retail"."main"."stg_moco_retail_typed__dbt_tmp" rename to "stg_moco_retail_typed"
+[0m13:34:20.013319 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:34:20.022076 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: COMMIT
+[0m13:34:20.023066 [debug] [Thread-2 (]: SQL status: OK in 0.009 seconds
+[0m13:34:20.023066 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.stg_moco_retail"
+[0m13:34:20.024062 [debug] [Thread-2 (]: On model.moco_retail.stg_moco_retail_typed: COMMIT
+[0m13:34:20.024062 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: COMMIT
+[0m13:34:20.025059 [debug] [Thread-2 (]: Using duckdb connection "model.moco_retail.stg_moco_retail_typed"
+[0m13:34:20.025059 [debug] [Thread-2 (]: On model.moco_retail.stg_moco_retail_typed: COMMIT
+[0m13:34:20.027358 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m13:34:20.031357 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.stg_moco_retail"
+[0m13:34:20.031357 [debug] [Thread-2 (]: SQL status: OK in 0.006 seconds
+[0m13:34:20.031357 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.stg_moco_retail"} */
+drop view if exists "moco_retail"."main"."stg_moco_retail__dbt_backup" cascade
+[0m13:34:20.032348 [debug] [Thread-2 (]: Using duckdb connection "model.moco_retail.stg_moco_retail_typed"
+[0m13:34:20.033355 [debug] [Thread-2 (]: On model.moco_retail.stg_moco_retail_typed: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.stg_moco_retail_typed"} */
+drop view if exists "moco_retail"."main"."stg_moco_retail_typed__dbt_backup" cascade
+[0m13:34:20.035795 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m13:34:20.036892 [debug] [Thread-1 (]: On model.moco_retail.stg_moco_retail: Close
+[0m13:34:20.037908 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m13:34:20.038900 [debug] [Thread-2 (]: On model.moco_retail.stg_moco_retail_typed: Close
+[0m13:34:20.038900 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b122e08-61ce-48f7-9507-c2aa36e31a6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B6461390>]}
+[0m13:34:20.039901 [info ] [Thread-1 (]: 1 of 10 OK created sql view model main.stg_moco_retail ......................... [[32mOK[0m in 0.07s]
+[0m13:34:20.039901 [debug] [Thread-1 (]: Finished running node model.moco_retail.stg_moco_retail
+[0m13:34:20.049129 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b122e08-61ce-48f7-9507-c2aa36e31a6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B914A410>]}
+[0m13:34:20.050129 [info ] [Thread-2 (]: 2 of 10 OK created sql view model main.stg_moco_retail_typed ................... [[32mOK[0m in 0.08s]
+[0m13:34:20.050129 [debug] [Thread-2 (]: Finished running node model.moco_retail.stg_moco_retail_typed
+[0m13:34:20.051130 [debug] [Thread-4 (]: Began running node test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40
+[0m13:34:20.051130 [debug] [Thread-3 (]: Began running node test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906
+[0m13:34:20.052129 [info ] [Thread-4 (]: 3 of 10 START test accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12  [RUN]
+[0m13:34:20.052129 [info ] [Thread-3 (]: 4 of 10 START test not_null_stg_moco_retail_typed_sale_date .................... [RUN]
+[0m13:34:20.052129 [debug] [Thread-4 (]: Acquiring new duckdb connection 'test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40'
+[0m13:34:20.053130 [debug] [Thread-3 (]: Acquiring new duckdb connection 'test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906'
+[0m13:34:20.053130 [debug] [Thread-4 (]: Began compiling node test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40
+[0m13:34:20.053130 [debug] [Thread-3 (]: Began compiling node test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906
+[0m13:34:20.062154 [debug] [Thread-4 (]: Writing injected SQL for node "test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40"
+[0m13:34:20.067253 [debug] [Thread-3 (]: Writing injected SQL for node "test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906"
+[0m13:34:20.068246 [debug] [Thread-4 (]: Began executing node test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40
+[0m13:34:20.068246 [debug] [Thread-3 (]: Began executing node test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906
+[0m13:34:20.077791 [debug] [Thread-4 (]: Writing runtime sql for node "test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40"
+[0m13:34:20.078784 [debug] [Thread-3 (]: Writing runtime sql for node "test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906"
+[0m13:34:20.079784 [debug] [Thread-4 (]: Using duckdb connection "test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40"
+[0m13:34:20.080784 [debug] [Thread-4 (]: On test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40: BEGIN
+[0m13:34:20.080784 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:34:20.080784 [debug] [Thread-3 (]: Using duckdb connection "test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906"
+[0m13:34:20.081783 [debug] [Thread-3 (]: On test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906: BEGIN
+[0m13:34:20.081783 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:34:20.092887 [debug] [Thread-4 (]: SQL status: OK in 0.013 seconds
+[0m13:34:20.093888 [debug] [Thread-3 (]: SQL status: OK in 0.012 seconds
+[0m13:34:20.093888 [debug] [Thread-4 (]: Using duckdb connection "test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40"
+[0m13:34:20.093888 [debug] [Thread-3 (]: Using duckdb connection "test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906"
+[0m13:34:20.094889 [debug] [Thread-4 (]: On test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        month_num as value_field,
+        count(*) as n_records
+
+    from "moco_retail"."main"."stg_moco_retail_typed"
+    group by month_num
+
+)
+
+select *
+from all_values
+where value_field not in (
+    '1','2','3','4','5','6','7','8','9','10','11','12'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:34:20.094889 [debug] [Thread-3 (]: On test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sale_date
+from "moco_retail"."main"."stg_moco_retail_typed"
+where sale_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:34:20.098295 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m13:34:20.098295 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m13:34:20.100294 [debug] [Thread-3 (]: On test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906: ROLLBACK
+[0m13:34:20.101295 [debug] [Thread-4 (]: On test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40: ROLLBACK
+[0m13:34:20.101295 [debug] [Thread-3 (]: Failed to rollback 'test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906'
+[0m13:34:20.102295 [debug] [Thread-4 (]: Failed to rollback 'test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40'
+[0m13:34:20.102295 [debug] [Thread-3 (]: On test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906: Close
+[0m13:34:20.103295 [debug] [Thread-4 (]: On test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40: Close
+[0m13:34:20.103295 [info ] [Thread-3 (]: 4 of 10 PASS not_null_stg_moco_retail_typed_sale_date .......................... [[32mPASS[0m in 0.05s]
+[0m13:34:20.103295 [debug] [Thread-3 (]: Finished running node test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906
+[0m13:34:20.105803 [info ] [Thread-4 (]: 3 of 10 PASS accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12  [[32mPASS[0m in 0.05s]
+[0m13:34:20.106808 [debug] [Thread-4 (]: Finished running node test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40
+[0m13:34:20.106808 [debug] [Thread-2 (]: Began running node model.moco_retail.dim_item
+[0m13:34:20.106808 [debug] [Thread-1 (]: Began running node model.moco_retail.fct_monthly_sales
+[0m13:34:20.107815 [info ] [Thread-2 (]: 5 of 10 START sql table model main.dim_item .................................... [RUN]
+[0m13:34:20.108814 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.moco_retail.stg_moco_retail_typed, now model.moco_retail.dim_item)
+[0m13:34:20.107815 [info ] [Thread-1 (]: 6 of 10 START sql incremental model main.fct_monthly_sales ..................... [RUN]
+[0m13:34:20.108814 [debug] [Thread-2 (]: Began compiling node model.moco_retail.dim_item
+[0m13:34:20.108814 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.moco_retail.stg_moco_retail, now model.moco_retail.fct_monthly_sales)
+[0m13:34:20.110813 [debug] [Thread-2 (]: Writing injected SQL for node "model.moco_retail.dim_item"
+[0m13:34:20.110813 [debug] [Thread-1 (]: Began compiling node model.moco_retail.fct_monthly_sales
+[0m13:34:20.115896 [debug] [Thread-1 (]: Writing injected SQL for node "model.moco_retail.fct_monthly_sales"
+[0m13:34:20.116898 [debug] [Thread-2 (]: Began executing node model.moco_retail.dim_item
+[0m13:34:20.126391 [debug] [Thread-2 (]: Writing runtime sql for node "model.moco_retail.dim_item"
+[0m13:34:20.127402 [debug] [Thread-1 (]: Began executing node model.moco_retail.fct_monthly_sales
+[0m13:34:20.144896 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.fct_monthly_sales"
+[0m13:34:20.144896 [debug] [Thread-1 (]: On model.moco_retail.fct_monthly_sales: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.fct_monthly_sales"} */
+
+    
+  
+    
+    
+
+    create temporary table
+      "fct_monthly_sales__dbt_tmp20250828133420142903"
+  
+    as (
+      
+
+with base as (
+  select *
+  from "moco_retail"."main"."stg_moco_retail_typed"
+  where sale_date is not null
+  
+    and sale_date >= (select coalesce(max(sale_date), '1900-01-01') from "moco_retail"."main"."fct_monthly_sales")
+  
+),
+norm as (
+  select
+    sale_date,
+    coalesce(nullif(trim(supplier), ''), 'unknown') as supplier,
+    item_code,
+    item_description,
+    item_type,
+    coalesce(retail_sales,0)      as retail_sales,
+    coalesce(retail_transfers,0)  as retail_transfers,
+    coalesce(warehouse_sales,0)   as warehouse_sales
+  from base
+),
+agg as (
+  select
+    sale_date,
+    supplier,
+    item_code,
+    item_description,
+    item_type,
+    sum(retail_sales)                                as retail_sales,
+    sum(retail_transfers)                            as retail_transfers,
+    sum(warehouse_sales)                             as warehouse_sales,
+    sum(retail_sales + retail_transfers + warehouse_sales) as total_sales
+  from norm
+  group by 1,2,3,4,5
+)
+select * from agg
+    );
+  
+  
+  
+[0m13:34:20.144896 [debug] [Thread-2 (]: Using duckdb connection "model.moco_retail.dim_item"
+[0m13:34:20.146092 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:34:20.146092 [debug] [Thread-2 (]: On model.moco_retail.dim_item: BEGIN
+[0m13:34:20.146092 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:34:20.151095 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m13:34:20.151095 [debug] [Thread-2 (]: Using duckdb connection "model.moco_retail.dim_item"
+[0m13:34:20.152095 [debug] [Thread-2 (]: On model.moco_retail.dim_item: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.dim_item"} */
+
+  
+    
+    
+
+    create  table
+      "moco_retail"."main"."dim_item__dbt_tmp"
+  
+    as (
+      
+
+with base as (
+  select
+    item_code,
+    item_description,
+    item_type,
+    coalesce(nullif(trim(supplier), ''), 'unknown') as supplier
+  from "moco_retail"."main"."stg_moco_retail_typed"
+),
+dim as (
+  select
+    item_code,
+    max(item_description) as item_description,
+    max(item_type)        as item_type,
+    max(supplier)         as supplier
+  from base
+  group by item_code
+)
+select * from dim
+    );
+  
+  
+[0m13:34:20.173626 [debug] [Thread-1 (]: SQL status: OK in 0.028 seconds
+[0m13:34:20.178136 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.fct_monthly_sales"
+[0m13:34:20.178136 [debug] [Thread-1 (]: On model.moco_retail.fct_monthly_sales: BEGIN
+[0m13:34:20.179137 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:34:20.179137 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.fct_monthly_sales"
+[0m13:34:20.179137 [debug] [Thread-1 (]: On model.moco_retail.fct_monthly_sales: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.fct_monthly_sales"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'fct_monthly_sales__dbt_tmp20250828133420142903'
+      
+      
+      order by ordinal_position
+
+  
+[0m13:34:20.197948 [debug] [Thread-1 (]: SQL status: OK in 0.018 seconds
+[0m13:34:20.200960 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.fct_monthly_sales"
+[0m13:34:20.201950 [debug] [Thread-2 (]: SQL status: OK in 0.049 seconds
+[0m13:34:20.201950 [debug] [Thread-1 (]: On model.moco_retail.fct_monthly_sales: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.fct_monthly_sales"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'fct_monthly_sales'
+      
+      and table_schema = 'main'
+      
+      
+      and table_catalog = 'moco_retail'
+      
+      order by ordinal_position
+
+  
+[0m13:34:20.203963 [debug] [Thread-2 (]: Using duckdb connection "model.moco_retail.dim_item"
+[0m13:34:20.204949 [debug] [Thread-2 (]: On model.moco_retail.dim_item: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.dim_item"} */
+alter table "moco_retail"."main"."dim_item" rename to "dim_item__dbt_backup"
+[0m13:34:20.205455 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m13:34:20.206456 [debug] [Thread-2 (]: Using duckdb connection "model.moco_retail.dim_item"
+[0m13:34:20.206456 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m13:34:20.207459 [debug] [Thread-2 (]: On model.moco_retail.dim_item: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.dim_item"} */
+alter table "moco_retail"."main"."dim_item__dbt_tmp" rename to "dim_item"
+[0m13:34:20.211459 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.fct_monthly_sales"
+[0m13:34:20.211459 [debug] [Thread-1 (]: On model.moco_retail.fct_monthly_sales: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.fct_monthly_sales"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'fct_monthly_sales'
+      
+      and table_schema = 'main'
+      
+      
+      and table_catalog = 'moco_retail'
+      
+      order by ordinal_position
+
+  
+[0m13:34:20.211459 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m13:34:20.214963 [debug] [Thread-2 (]: On model.moco_retail.dim_item: COMMIT
+[0m13:34:20.214963 [debug] [Thread-2 (]: Using duckdb connection "model.moco_retail.dim_item"
+[0m13:34:20.215967 [debug] [Thread-2 (]: On model.moco_retail.dim_item: COMMIT
+[0m13:34:20.215967 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m13:34:20.225470 [debug] [Thread-1 (]: Writing runtime sql for node "model.moco_retail.fct_monthly_sales"
+[0m13:34:20.225470 [debug] [Thread-2 (]: SQL status: OK in 0.010 seconds
+[0m13:34:20.227486 [debug] [Thread-2 (]: Using duckdb connection "model.moco_retail.dim_item"
+[0m13:34:20.227486 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.fct_monthly_sales"
+[0m13:34:20.227486 [debug] [Thread-2 (]: On model.moco_retail.dim_item: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.dim_item"} */
+drop table if exists "moco_retail"."main"."dim_item__dbt_backup" cascade
+[0m13:34:20.228474 [debug] [Thread-1 (]: On model.moco_retail.fct_monthly_sales: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "model.moco_retail.fct_monthly_sales"} */
+
+        
+            delete from "moco_retail"."main"."fct_monthly_sales" as DBT_INCREMENTAL_TARGET
+            using "fct_monthly_sales__dbt_tmp20250828133420142903"
+            where (
+                
+                    "fct_monthly_sales__dbt_tmp20250828133420142903".sale_date = DBT_INCREMENTAL_TARGET.sale_date
+                    and 
+                
+                    "fct_monthly_sales__dbt_tmp20250828133420142903".item_code = DBT_INCREMENTAL_TARGET.item_code
+                    and 
+                
+                    "fct_monthly_sales__dbt_tmp20250828133420142903".supplier = DBT_INCREMENTAL_TARGET.supplier
+                    
+                
+                
+            );
+        
+    
+
+    insert into "moco_retail"."main"."fct_monthly_sales" ("sale_date", "supplier", "item_code", "item_description", "item_type", "retail_sales", "retail_transfers", "warehouse_sales", "total_sales")
+    (
+        select "sale_date", "supplier", "item_code", "item_description", "item_type", "retail_sales", "retail_transfers", "warehouse_sales", "total_sales"
+        from "fct_monthly_sales__dbt_tmp20250828133420142903"
+    )
+  
+[0m13:34:20.230474 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m13:34:20.231473 [debug] [Thread-2 (]: On model.moco_retail.dim_item: Close
+[0m13:34:20.231473 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b122e08-61ce-48f7-9507-c2aa36e31a6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210BA1F7E90>]}
+[0m13:34:20.232474 [info ] [Thread-2 (]: 5 of 10 OK created sql table model main.dim_item ............................... [[32mOK[0m in 0.12s]
+[0m13:34:20.232474 [debug] [Thread-2 (]: Finished running node model.moco_retail.dim_item
+[0m13:34:20.236981 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m13:34:20.237984 [debug] [Thread-1 (]: On model.moco_retail.fct_monthly_sales: COMMIT
+[0m13:34:20.238985 [debug] [Thread-1 (]: Using duckdb connection "model.moco_retail.fct_monthly_sales"
+[0m13:34:20.238985 [debug] [Thread-1 (]: On model.moco_retail.fct_monthly_sales: COMMIT
+[0m13:34:20.246146 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m13:34:20.246146 [debug] [Thread-1 (]: On model.moco_retail.fct_monthly_sales: Close
+[0m13:34:20.346702 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b122e08-61ce-48f7-9507-c2aa36e31a6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B90766D0>]}
+[0m13:34:20.346702 [info ] [Thread-1 (]: 6 of 10 OK created sql incremental model main.fct_monthly_sales ................ [[32mOK[0m in 0.24s]
+[0m13:34:20.347706 [debug] [Thread-1 (]: Finished running node model.moco_retail.fct_monthly_sales
+[0m13:34:20.348705 [debug] [Thread-4 (]: Began running node test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a
+[0m13:34:20.348705 [debug] [Thread-3 (]: Began running node test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c
+[0m13:34:20.348705 [debug] [Thread-2 (]: Began running node test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89
+[0m13:34:20.349706 [debug] [Thread-1 (]: Began running node test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d
+[0m13:34:20.348705 [info ] [Thread-4 (]: 7 of 10 START test not_null_fct_monthly_sales_item_code ........................ [RUN]
+[0m13:34:20.349706 [info ] [Thread-3 (]: 8 of 10 START test not_null_fct_monthly_sales_sale_date ........................ [RUN]
+[0m13:34:20.349706 [info ] [Thread-2 (]: 9 of 10 START test not_null_fct_monthly_sales_supplier ......................... [RUN]
+[0m13:34:20.350706 [info ] [Thread-1 (]: 10 of 10 START test unique_combo_fct_monthly_sales_sale_date__item_code__supplier  [RUN]
+[0m13:34:20.350706 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.moco_retail.accepted_values_stg_moco_retail_typed_month_num__1__2__3__4__5__6__7__8__9__10__11__12.f7c2e26a40, now test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a)
+[0m13:34:20.350706 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.moco_retail.not_null_stg_moco_retail_typed_sale_date.36b44cd906, now test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c)
+[0m13:34:20.351706 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.moco_retail.dim_item, now test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89)
+[0m13:34:20.351706 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.moco_retail.fct_monthly_sales, now test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d)
+[0m13:34:20.351706 [debug] [Thread-4 (]: Began compiling node test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a
+[0m13:34:20.352706 [debug] [Thread-3 (]: Began compiling node test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c
+[0m13:34:20.352706 [debug] [Thread-2 (]: Began compiling node test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89
+[0m13:34:20.352706 [debug] [Thread-1 (]: Began compiling node test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d
+[0m13:34:20.355241 [debug] [Thread-4 (]: Writing injected SQL for node "test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a"
+[0m13:34:20.357239 [debug] [Thread-3 (]: Writing injected SQL for node "test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c"
+[0m13:34:20.360252 [debug] [Thread-2 (]: Writing injected SQL for node "test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89"
+[0m13:34:20.363239 [debug] [Thread-1 (]: Writing injected SQL for node "test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d"
+[0m13:34:20.364756 [debug] [Thread-4 (]: Began executing node test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a
+[0m13:34:20.365764 [debug] [Thread-3 (]: Began executing node test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c
+[0m13:34:20.366778 [debug] [Thread-4 (]: Writing runtime sql for node "test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a"
+[0m13:34:20.366778 [debug] [Thread-2 (]: Began executing node test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89
+[0m13:34:20.368764 [debug] [Thread-3 (]: Writing runtime sql for node "test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c"
+[0m13:34:20.368764 [debug] [Thread-1 (]: Began executing node test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d
+[0m13:34:20.369764 [debug] [Thread-2 (]: Writing runtime sql for node "test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89"
+[0m13:34:20.370764 [debug] [Thread-4 (]: Using duckdb connection "test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a"
+[0m13:34:20.371763 [debug] [Thread-1 (]: Writing runtime sql for node "test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d"
+[0m13:34:20.371763 [debug] [Thread-3 (]: Using duckdb connection "test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c"
+[0m13:34:20.372764 [debug] [Thread-4 (]: On test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a: BEGIN
+[0m13:34:20.372764 [debug] [Thread-2 (]: Using duckdb connection "test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89"
+[0m13:34:20.373764 [debug] [Thread-3 (]: On test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c: BEGIN
+[0m13:34:20.373764 [debug] [Thread-1 (]: Using duckdb connection "test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d"
+[0m13:34:20.373764 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m13:34:20.373764 [debug] [Thread-2 (]: On test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89: BEGIN
+[0m13:34:20.374765 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m13:34:20.374765 [debug] [Thread-1 (]: On test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d: BEGIN
+[0m13:34:20.374765 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:34:20.375876 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:34:20.386942 [debug] [Thread-4 (]: SQL status: OK in 0.013 seconds
+[0m13:34:20.386942 [debug] [Thread-2 (]: SQL status: OK in 0.012 seconds
+[0m13:34:20.386942 [debug] [Thread-1 (]: SQL status: OK in 0.012 seconds
+[0m13:34:20.386942 [debug] [Thread-3 (]: SQL status: OK in 0.013 seconds
+[0m13:34:20.387942 [debug] [Thread-4 (]: Using duckdb connection "test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a"
+[0m13:34:20.387942 [debug] [Thread-2 (]: Using duckdb connection "test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89"
+[0m13:34:20.387942 [debug] [Thread-1 (]: Using duckdb connection "test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d"
+[0m13:34:20.388942 [debug] [Thread-3 (]: Using duckdb connection "test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c"
+[0m13:34:20.388942 [debug] [Thread-4 (]: On test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select item_code
+from "moco_retail"."main"."fct_monthly_sales"
+where item_code is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:34:20.388942 [debug] [Thread-2 (]: On test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select supplier
+from "moco_retail"."main"."fct_monthly_sales"
+where supplier is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:34:20.389942 [debug] [Thread-1 (]: On test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+select
+    sale_date, item_code, supplier,
+    count(*) as count
+from "moco_retail"."main"."fct_monthly_sales"
+group by sale_date, item_code, supplier
+having count(*) > 1
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:34:20.389942 [debug] [Thread-3 (]: On test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c: /* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "moco_retail_profile", "target_name": "dev", "node_id": "test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sale_date
+from "moco_retail"."main"."fct_monthly_sales"
+where sale_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:34:20.390942 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m13:34:20.390942 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m13:34:20.391943 [debug] [Thread-4 (]: On test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a: ROLLBACK
+[0m13:34:20.392942 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m13:34:20.392942 [debug] [Thread-2 (]: On test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89: ROLLBACK
+[0m13:34:20.393941 [debug] [Thread-4 (]: Failed to rollback 'test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a'
+[0m13:34:20.394944 [debug] [Thread-3 (]: On test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c: ROLLBACK
+[0m13:34:20.394944 [debug] [Thread-2 (]: Failed to rollback 'test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89'
+[0m13:34:20.394944 [debug] [Thread-4 (]: On test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a: Close
+[0m13:34:20.396315 [debug] [Thread-3 (]: Failed to rollback 'test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c'
+[0m13:34:20.396315 [debug] [Thread-2 (]: On test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89: Close
+[0m13:34:20.397314 [debug] [Thread-3 (]: On test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c: Close
+[0m13:34:20.396315 [info ] [Thread-4 (]: 7 of 10 PASS not_null_fct_monthly_sales_item_code .............................. [[32mPASS[0m in 0.05s]
+[0m13:34:20.397314 [info ] [Thread-2 (]: 9 of 10 PASS not_null_fct_monthly_sales_supplier ............................... [[32mPASS[0m in 0.05s]
+[0m13:34:20.398314 [debug] [Thread-4 (]: Finished running node test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a
+[0m13:34:20.397314 [info ] [Thread-3 (]: 8 of 10 PASS not_null_fct_monthly_sales_sale_date .............................. [[32mPASS[0m in 0.05s]
+[0m13:34:20.398314 [debug] [Thread-2 (]: Finished running node test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89
+[0m13:34:20.399314 [debug] [Thread-3 (]: Finished running node test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c
+[0m13:34:20.411826 [debug] [Thread-1 (]: SQL status: OK in 0.021 seconds
+[0m13:34:20.412833 [debug] [Thread-1 (]: On test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d: ROLLBACK
+[0m13:34:20.412833 [debug] [Thread-1 (]: Failed to rollback 'test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d'
+[0m13:34:20.412833 [debug] [Thread-1 (]: On test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d: Close
+[0m13:34:20.415904 [info ] [Thread-1 (]: 10 of 10 PASS unique_combo_fct_monthly_sales_sale_date__item_code__supplier .... [[32mPASS[0m in 0.06s]
+[0m13:34:20.416903 [debug] [Thread-1 (]: Finished running node test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d
+[0m13:34:20.417903 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:34:20.417903 [debug] [MainThread]: On master: BEGIN
+[0m13:34:20.417903 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:34:20.422903 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m13:34:20.422903 [debug] [MainThread]: On master: COMMIT
+[0m13:34:20.423903 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:34:20.423903 [debug] [MainThread]: On master: COMMIT
+[0m13:34:20.423903 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:34:20.423903 [debug] [MainThread]: On master: Close
+[0m13:34:20.426083 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:34:20.426083 [debug] [MainThread]: Connection 'create_moco_retail_main' was properly closed.
+[0m13:34:20.426083 [debug] [MainThread]: Connection 'list_moco_retail_main' was properly closed.
+[0m13:34:20.426083 [debug] [MainThread]: Connection 'test.moco_retail.unique_combo_fct_monthly_sales_sale_date__item_code__supplier.c44c4b5c5d' was properly closed.
+[0m13:34:20.426083 [debug] [MainThread]: Connection 'test.moco_retail.not_null_fct_monthly_sales_supplier.4b3f574c89' was properly closed.
+[0m13:34:20.427083 [debug] [MainThread]: Connection 'test.moco_retail.not_null_fct_monthly_sales_item_code.2e90d8621a' was properly closed.
+[0m13:34:20.427083 [debug] [MainThread]: Connection 'test.moco_retail.not_null_fct_monthly_sales_sale_date.8e81663a4c' was properly closed.
+[0m13:34:20.427083 [info ] [MainThread]: 
+[0m13:34:20.427083 [info ] [MainThread]: Finished running 1 incremental model, 1 table model, 6 data tests, 2 view models in 0 hours 0 minutes and 0.62 seconds (0.62s).
+[0m13:34:20.428083 [debug] [MainThread]: Command end result
+[0m13:34:20.441224 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_moco_retail\target\manifest.json
+[0m13:34:20.442233 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_moco_retail\target\semantic_manifest.json
+[0m13:34:20.445750 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt_moco_retail\target\run_results.json
+[0m13:34:20.446743 [info ] [MainThread]: 
+[0m13:34:20.446743 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:34:20.447742 [info ] [MainThread]: 
+[0m13:34:20.447742 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=10
+[0m13:34:20.447742 [debug] [MainThread]: Command `python -m dbt.cli.main build` succeeded at 13:34:20.447742 after 1.20 seconds
+[0m13:34:20.448742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B720C7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B84BB590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B84BBB10>]}
+[0m13:34:20.448742 [debug] [MainThread]: Flushing usage events
+[0m13:34:21.034889 [debug] [MainThread]: An error was encountered while trying to flush usage events

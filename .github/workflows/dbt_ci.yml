@@ -1,0 +1,52 @@
+name: dbt ci
+
+on:
+  pull_request:
+    branches: 
+        - main 
+  push:
+    branches:
+      - main
+      - CI Building
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    env:
+      DBT_PROFILES_DIR: ${{ github.workspace }}/.dbt
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: ingest csv -> duckdb
+        run: python etl/ingest_moco_retail.py
+
+      - name: dbt build (models + tests)
+        run: python -m dbt.cli.main build --project-dir dbt_moco_retail --profiles-dir ./.dbt
+
+      - name: generate docs
+        run: python -m dbt.cli.main docs generate --project-dir dbt_moco_retail --profiles-dir ./.dbt
+
+      - name: upload artifacts (dbt target/)
+        uses: actions/upload-artifact@v4
+        with:
+          name: dbt-target
+          path: dbt_moco_retail/target/**
+          if-no-files-found: warn
+          retention-days: 7
