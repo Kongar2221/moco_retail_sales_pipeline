@@ -80,11 +80,3 @@ LIVE VIEW (recommended)
 -----------------------
 Open the public link and interact there:
 https://public.tableau.com/views/Pipline_Resale/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
-
-
-NOTES / TODO (optional)
------------------------
-- Add a “Top-N suppliers” parameter to tidy the multi-line chart.
-- Add a tiny “Data thru: <max month>” stamp in the header.
-- If the null badge shows on a chart, filter out Null dates on that sheet.
-- Feel free to duplicate the dashboard for a “Reset Filters” button.
